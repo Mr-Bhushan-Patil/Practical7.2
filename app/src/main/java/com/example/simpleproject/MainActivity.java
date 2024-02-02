@@ -12,13 +12,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        public void display(View v)
-        {
-            name = (EditText) findViewById(R.id.t1);
-            email = (EditText) findViewById(R.id.t2);
-            phone = (EditText) findViewById(R.id.t3);
-            date = (EditText) findViewById(R.id.t4);
-            pass = (EditText) findViewById(R.id.t5);
+    }
+    public void display(View v)
+    {
+        name = (EditText) findViewById(R.id.t1);
+        email = (EditText) findViewById(R.id.t2);
+        phone = (EditText) findViewById(R.id.t3);
+        date = (EditText) findViewById(R.id.t4);
+        pass = (EditText) findViewById(R.id.t5);
 
-            Toast.makeText(getApplicationContext(),"Hello "+name.getText().toString()+"\n your password is "+email.getText().toString(), Toast.LENGTH_SHORT).show();
-        }}
+        Toast.makeText(getApplicationContext(),"Hello "+name.getText().toString()+"\n your password is "+email.getText().toString(), Toast.LENGTH_SHORT).show();
+    }
+}
